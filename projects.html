@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Shrestha Pandit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Essential Navigation Styles */
+      header {
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      
+      /* Main Content Styles */
+      main {
+        padding-top: 100px;
+      }
+      
+      .projects-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .coming-soon {
+        margin-top: 4rem;
+        padding: 3rem;
+        background: rgba(83, 0, 160, 0.1);
+        border-radius: 15px;
+      }
+
+      .coming-soon i {
+        font-size: 4rem;
+        color: #5300a0;
+        margin-bottom: 2rem;
+      }
+
+      .coming-soon h2 {
+        font-size: 2.5rem;
+        color: #e7e7e7;
+        margin-bottom: 1rem;
+      }
+
+      .coming-soon p {
+        color: #a7a7a7;
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    
+    <header>
+      <h1 class="logo">Shrestha Pandit</h1>
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul>
+          <li><a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2500" href="projects.html">Projects</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="linkedin" href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/" target="_blank">
+        linkedin<i class="fa-brands fa-linkedin"></i>
+      </a>
+    </header>
+
+    <main>
+      <div class="projects-section">
+        <div class="tag-box">
+          <div class="tag">MY WORK 💼</div>
+        </div>
+
+        <div class="coming-soon" data-aos="fade-up">
+          <i class="fas fa-code"></i>
+          <h2>Coming Soon</h2>
+          <p>Exciting projects are in the works! Check back soon to see what I've been building.</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+        this.textContent = this.textContent === '☰' ? '✕' : '☰';
+      });
+    </script>
+  </body>
+</html> 
