@@ -206,11 +206,18 @@
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
         </p>
 
-        <form action="https://formsubmit.co/ajax/shresthapandit8@gmail.com" method="POST" class="contact-form" id="contactForm">
+        <form action="https://formsubmit.co/7309bb3f6f57ed8fece8007054a47b0d" method="POST" class="contact-form" id="contactForm">
           <!-- Honeypot -->
           <input type="text" name="_honey" style="display: none;">
+          
           <!-- Disable Captcha -->
           <input type="hidden" name="_captcha" value="false">
+          
+          <!-- Success page -->
+          <input type="hidden" name="_next" value="https://shresthaportfolio2001.netlify.app/thank-you.html">
+          
+          <!-- Template -->
+          <input type="hidden" name="_template" value="table">
           
           <div class="form-group">
             <label for="name">Name</label>
@@ -259,33 +266,6 @@
         duration: 800,
         easing: 'ease-in-out',
         once: true
-      });
-
-      // Form submission handling
-      document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-
-        fetch('https://formsubmit.co/ajax/shresthapandit8@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(data => {
-          // Show success message
-          document.getElementById('contactForm').style.display = 'none';
-          document.getElementById('successMessage').classList.add('show');
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('There was an error sending your message. Please try again.');
-        });
       });
 
       document.querySelector('.menu-toggle').addEventListener('click', function() {

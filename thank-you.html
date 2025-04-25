@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Shrestha Pandit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      .thank-you-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      .success-icon {
+        font-size: 4rem;
+        color: #5300a0;
+        margin-bottom: 2rem;
+      }
+
+      .thank-you-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #e7e7e7;
+      }
+
+      .thank-you-section p {
+        font-size: 1.2rem;
+        color: #a7a7a7;
+        margin-bottom: 2rem;
+      }
+
+      .back-home {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #5300a0;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+      }
+
+      .back-home:hover {
+        background-color: #6600c5;
+        transform: translateY(-2px);
+      }
+
+      @media screen and (max-width: 768px) {
+        .thank-you-section {
+          padding: 3rem 1rem;
+        }
+
+        .thank-you-section h1 {
+          font-size: 2rem;
+        }
+
+        .thank-you-section p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    
+    <header>
+      <h1 class="logo">Shrestha Pandit</h1>
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul>
+          <li><a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2500" href="projects.html">Projects</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="linkedin" href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/" target="_blank">
+        linkedin<i class="fa-brands fa-linkedin"></i>
+      </a>
+    </header>
+
+    <main>
+      <div class="thank-you-section">
+        <i class="fas fa-check-circle success-icon"></i>
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully. I'll get back to you as soon as possible!</p>
+        <a href="index.html" class="back-home">Back to Home</a>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+        this.textContent = this.textContent === '☰' ? '✕' : '☰';
+      });
+    </script>
+  </body>
+</html> 
