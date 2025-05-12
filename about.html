@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Shrestha Pandit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Essential Navigation Styles */
+      header {
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      
+      /* Main Content Styles */
+      main {
+        padding-top: 100px;
+      }
+      
+      .about-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .tag-box {
+        width: 200px;
+        margin-bottom: 2rem;
+      }
+
+      .section-heading {
+        color: #5300a0;
+        font-size: 1.8rem;
+        margin: 3rem 0 1.5rem;
+        font-weight: 600;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .skill-item {
+        background: rgba(83, 0, 160, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .skill-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .skill-item i {
+        color: #5300a0;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .skill-item h3 {
+        color: #e7e7e7;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      .skill-item p {
+        color: #a7a7a7;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      .description {
+        color: #a7a7a7;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1.5rem 0;
+      }
+
+      .tech-item {
+        background: rgba(83, 0, 160, 0.2);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        color: #e7e7e7;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+
+      .tech-item:hover {
+        background: rgba(83, 0, 160, 0.4);
+        transform: translateY(-2px);
+      }
+
+      .profile-pic-container-about {
+        display: none;
+      }
+      .profile-pic-about {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 24px rgba(83,0,160,0.18);
+        border: 3px solid #5300a0;
+        background: #fff;
+        margin: 0 auto 2rem auto;
+        display: block;
+      }
+      @media (min-width: 993px) {
+        .profile-pic-container-about {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .profile-name-about {
+        font-size: 1.3rem;
+        color: #ebe7f0;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0.7rem;
+        letter-spacing: 0.04em;
+      
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    
+    <header>
+      <h1 class="logo">Shrestha Pandit</h1>
+      <nav>
+        <ul>
+          <li><a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2500" href="projects.html">Projects</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="linkedin" href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/" target="_blank">
+        linkedin<i class="fa-brands fa-linkedin"></i>
+      </a>
+      <div class="menu-toggle">☰</div>
+    </header>
+
+    <main>
+      <div class="about-section">
+        <div class="profile-pic-container-about" data-aos="fade-zoom-in" data-aos-delay="200">
+          <img src="shrestha.jpg" alt="Shrestha Pandit" class="profile-pic-about" />
+          <div class="profile-name-about">Shrestha Pandit</div>
+        </div>
+        <div class="tag-box">
+          <div class="tag">ABOUT ME 👋</div>
+        </div>
+
+        <h1>PASSIONATE DEVELOPER & PROBLEM SOLVER</h1>
+
+        <p class="description">
+          I am a passionate software engineer and B.Tech student with a deep love for creating elegant solutions to complex problems. 
+          My journey in tech began during my college years at Greater Noida, and since then, I've been constantly learning and evolving 
+          in this ever-changing field of technology. As a student, I combine my academic knowledge with practical development experience 
+          to create innovative solutions.
+        </p>
+
+        <h2 class="section-heading">Technical Expertise</h2>
+        <div class="tech-list">
+          <span class="tech-item">HTML5 & CSS3</span>
+          <span class="tech-item">JavaScript</span>
+          <span class="tech-item">React.js</span>
+          <span class="tech-item">Node.js</span>
+          <span class="tech-item">MongoDB</span>
+          <span class="tech-item">Postman</span>
+          <span class="tech-item">Git & GitHub</span>
+          <span class="tech-item">Responsive Design</span>
+          <span class="tech-item">UI/UX Design</span>
+        </div>
+
+        <h2 class="section-heading">What I Do</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Building modern and responsive websites with clean, efficient code.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive and beautiful user interfaces that engage users.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+            <p>Ensuring applications work flawlessly across all devices and screens.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-brain"></i>
+            <h3>Problem Solving</h3>
+            <p>Finding efficient solutions to complex technical challenges.</p>
+          </div>
+        </div>
+
+        <h2 class="section-heading">Beyond Coding</h2>
+        <p class="description">
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+          or sharing my knowledge with the developer community. I believe in continuous learning and staying 
+          updated with the latest trends in technology.
+        </p>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+        this.textContent = this.textContent === '☰' ? '✕' : '☰';
+      });
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Shrestha Pandit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Essential Navigation Styles */
+      header {
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      
+      /* Main Content Styles */
+      main {
+        padding-top: 100px;
+      }
+      
+      .projects-section {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .coming-soon {
+        margin-top: 4rem;
+        padding: 3rem;
+        background: rgba(83, 0, 160, 0.1);
+        border-radius: 15px;
+      }
+
+      .coming-soon i {
+        font-size: 4rem;
+        color: #5300a0;
+        margin-bottom: 2rem;
+      }
+
+      .coming-soon h2 {
+        font-size: 2.5rem;
+        color: #e7e7e7;
+        margin-bottom: 1rem;
+      }
+
+      .coming-soon p {
+        color: #a7a7a7;
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .projects-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .project-card {
+        background: linear-gradient(135deg, #1a1a2e 60%, #5300a0 100%);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        color: #e7e7e7;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 16px 40px 0 rgba(83, 0, 160, 0.25);
+      }
+
+      .project-card h2 {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+
+      .project-card .description {
+        color: #bdbdbd;
+        font-size: 1.05rem;
+        margin-bottom: 1rem;
+      }
+
+      .project-card ul {
+        margin: 0 0 1.2rem 1.2rem;
+        padding: 0;
+        color: #d1b3ff;
+        font-size: 0.98rem;
+        list-style: disc inside;
+      }
+
+      .project-link {
+        margin-top: auto;
+        align-self: flex-end;
+        background: #fff;
+        color: #5300a0;
+        padding: 0.5rem 1.2rem;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(83,0,160,0.08);
+        transition: background 0.2s, color 0.2s;
+      }
+
+      .project-link:hover {
+        background: #5300a0;
+        color: #fff;
+      }
+
+      @media (max-width: 600px) {
+        .projects-list {
+          grid-template-columns: 1fr;
+          gap: 1.2rem;
+        }
+        .project-card {
+          padding: 1.2rem 0.8rem 1rem 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    
+    <header>
+      <h1 class="logo">Shrestha Pandit</h1>
+      <nav>
+        <ul>
+          <li><a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2500" href="projects.html">Projects</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="linkedin" href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/" target="_blank">
+        linkedin<i class="fa-brands fa-linkedin"></i>
+      </a>
+      <div class="menu-toggle">☰</div>
+    </header>
+
+    <main>
+      <div class="projects-section">
+        <div class="tag-box">
+          <div class="tag">MY WORK 💼</div>
+        </div>
+
+        <div class="projects-list">
+          <!-- Employee Management System -->
+          <div class="project-card" data-aos="fade-up">
+            <h2>Employee Management System</h2>
+            <p class="description">Comprehensive EMS with CRUD functionality for 50+ employees</p>
+            <ul>
+              <li>Accelerated data management by 40%</li>
+              <li>Reduced code duplication by 35% with modular React components</li>
+              <li>Improved UI rendering by 25%</li>
+              <li>Local storage solution with 100% data integrity</li>
+            </ul>
+            <a href="https://github.com/shresthaPandit/Ems" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+
+          <!-- Meme Generator -->
+          <div class="project-card" data-aos="fade-up">
+            <h2>Meme Generator</h2>
+            <p class="description">Interactive platform for instant content generation</p>
+            <ul>
+              <li>Processes 100+ daily API requests with 99.8% uptime</li>
+              <li>Responsive design for 12+ device types</li>
+              <li>Reduced bounce rate by 30% and increased mobile engagement by 45%</li>
+              <li>Advanced DOM manipulation reducing load time by 50%</li>
+            </ul>
+            <a href="https://meme-generator-shresthapandits-projects.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+          </div>
+
+          <!-- School Management API -->
+          <div class="project-card" data-aos="fade-up">
+            <h2>School Management API</h2>
+            <p class="description">Node.js/Express API with geolocation-based sorting</p>
+            <ul>
+              <li>Handles 100+ database operations per minute</li>
+              <li>99.9% protection against web vulnerabilities using Helmet.js</li>
+              <li>Intuitive frontend with vanilla JavaScript</li>
+              <li>Optimized CORS configurations for cross-origin interactions</li>
+            </ul>
+            <a href="https://github.com/shresthaPandit/school-management-api" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+
+          <!-- Music Platform -->
+          <div class="project-card" data-aos="fade-up">
+            <h2>Music Platform</h2>
+            <p class="description">Streaming application supporting 10+ songs</p>
+            <ul>
+              <li>Buffer times under 2 seconds</li>
+              <li>Integration with 3 third-party APIs</li>
+              <li>Reduced playback failures by 75% with error handling</li>
+            </ul>
+            <a href="https://github.com/shresthaPandit/MUSIC_SITE" target="_blank" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="more-projects-section" data-aos="fade-up">
+          <hr style="border: none; border-top: 2px solid #5300a0; margin: 2.5rem 0 1.5rem 0; width: 60%;">
+          <div class="more-projects-text">
+            <i class="fa-solid fa-rocket" style="color:#5300a0; font-size:1.5rem; margin-bottom:0.5rem;"></i>
+            <h3 style="margin:0; color:#ebe7f0; font-weight:600; letter-spacing:0.03em;">...and many more projects!</h3>
+            <p style="color:#bdbdbd; margin-top:0.5rem;">Explore my GitHub for more apps, APIs, and creative experiments.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+        this.textContent = this.textContent === '☰' ? '✕' : '☰';
+      });
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Shrestha Pandit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    <div class="container">
+      <header>
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">
+          Shrestha Pandit
+        </h1>
+        <nav>
+          <ul>
+            <li><a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a></li>
+            <li><a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a></li>
+            <li><a data-aos="fade-down" data-aos-duration="2500" href="projects.html">Projects</a></li>
+            <li><a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="linkedin" data-aos="fade-down" data-aos-duration="3000" href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/" target="_blank">linkedin<i class="fa-brands fa-linkedin"></i></a>
+        <div class="menu-toggle">☰</div>
+      </header>
+      <main>
+        <div class="content">
+          <div class="profile-pic-container" data-aos="fade-zoom-in" data-aos-delay="200">
+            <img src="shrestha.jpg" alt="Shrestha Pandit" class="profile-pic" />
+          </div>
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="1500"
+            class="tag-box"
+          >
+            <div class="tag">INTRODUCING 🚀</div>
+          </div>
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="2000"
+          >
+            SOFTWARE ENGINEER & WEB DEVELOPER
+          </h1>
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="2500"
+            class="description"
+          >
+            Frontend developer passionate about crafting seamless user
+            experiences. Skilled in DSA, exploring backend technologies, and
+            driven by a love for clean, efficient code.
+          </p>
+          <div class="btn">
+            <a
+              href="https://github.com/shresthaPandit"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="2700"
+              class="project"
+              target="_blank"
+              >Github<i class="fa-brands fa-github"></i></a
+            >
+            <a
+              href="https://drive.google.com/file/d/1RZ3CHQxTvzw-CuyiMro_7Gb3hSj3r3gw/view"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="3000"
+              class="resume"
+              target="_blank"
+              >Resume
+            </a>
+          </div>
+        </div>
+      </main>
+      <spline-viewer
+        class="robot-3d"
+        url="https://prod.spline.design/wfUeOyPNKbKQHpJm/scene.splinecode"
+      ></spline-viewer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.86/build/spline-viewer.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+        this.textContent = this.textContent === '☰' ? '✕' : '☰';
+      });
+    </script>
+    <style>
+      .profile-pic-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 24px rgba(83,0,160,0.18);
+        border: 3px solid #5300a0;
+        background: #fff;
+      }
+      @media (max-width: 600px) {
+        .profile-pic {
+          width: 90px;
+          height: 90px;
+        }
+      }
+      @media (min-width: 993px) {
+        .profile-pic-container {
+          display: none;
+        }
+      }
+    </style>
+  </body>
+</html>

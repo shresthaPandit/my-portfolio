@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Shrestha Pandit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Essential Navigation Styles */
+      header {
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      
+      /* Main Content Styles */
+      main {
+        padding-top: 100px;
+      }
+      
+      .contact-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .tag-box {
+        width: 200px;
+        margin-bottom: 2rem;
+      }
+
+      .contact-form {
+        background: rgba(83, 0, 160, 0.1);
+        padding: 2rem;
+        border-radius: 15px;
+        margin-top: 2rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #a7a7a7;
+        font-size: 0.9rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(83, 0, 160, 0.2);
+        border-radius: 8px;
+        color: #e7e7e7;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #5300a0;
+        box-shadow: 0 0 10px rgba(83, 0, 160, 0.3);
+      }
+
+      .form-group textarea {
+        height: 150px;
+        resize: none;
+      }
+
+      .submit-btn {
+        background: #5300a0;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .submit-btn:hover {
+        background: #6600c5;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 0, 197, 0.3);
+      }
+
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .contact-card {
+        background: rgba(83, 0, 160, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: transform 0.3s ease;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .contact-card i {
+        font-size: 1.5rem;
+        color: #5300a0;
+      }
+
+      .contact-card .info {
+        color: #a7a7a7;
+      }
+
+      .contact-card .info h3 {
+        color: #e7e7e7;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .description {
+        color: #a7a7a7;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        max-width: 600px;
+      }
+
+      /* Add these styles for the success message */
+      .success-message {
+        display: none;
+        background: rgba(83, 0, 160, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      
+      .success-message.show {
+        display: block;
+      }
+
+      .success-message i {
+        font-size: 3rem;
+        color: #5300a0;
+        margin-bottom: 1rem;
+      }
+
+      .success-message h3 {
+        color: #e7e7e7;
+        margin-bottom: 1rem;
+      }
+
+      .success-message p {
+        color: #a7a7a7;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    
+    <header>
+      <h1 class="logo">Shrestha Pandit</h1>
+      <nav>
+        <ul>
+          <li><a data-aos="fade-down" data-aos-duration="1500" href="index.html">Home</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="2500" href="projects.html">Projects</a></li>
+          <li><a data-aos="fade-down" data-aos-duration="3000" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="linkedin" href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/" target="_blank">
+        linkedin<i class="fa-brands fa-linkedin"></i>
+      </a>
+      <div class="menu-toggle">☰</div>
+    </header>
+
+    <main>
+      <div class="contact-section">
+        <div class="tag-box">
+          <div class="tag">GET IN TOUCH 📧</div>
+        </div>
+
+        <h1>LET'S CONNECT</h1>
+
+        <p class="description">
+          Have a question or want to work together? Feel free to reach out! 
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+        </p>
+
+        <form action="https://formsubmit.co/7309bb3f6f57ed8fece8007054a47b0d" method="POST" class="contact-form" id="contactForm">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+          
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          
+          <!-- Success page -->
+          <input type="hidden" name="_next" value="https://shresthaportfolio2001.netlify.app/thank-you.html">
+          
+          <!-- Template -->
+          <input type="hidden" name="_template" value="table">
+          
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i>
+          <h3>Thank You!</h3>
+          <p>Your message has been sent successfully. I'll get back to you as soon as possible!</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+              <h3>Email</h3>
+              <p>shresthapandit8@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info">
+              <h3>Location</h3>
+              <p>Greater Noida, Uttar Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+        this.textContent = this.textContent === '☰' ? '✕' : '☰';
+      });
+    </script>
+  </body>
+</html> 
